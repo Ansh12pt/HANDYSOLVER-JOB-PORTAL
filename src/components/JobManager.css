@@ -1,0 +1,254 @@
+.job-manager {
+    display: flex;
+}
+
+.heading {
+    color: #0a0e0d;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.job-management-panel {
+    display: block;
+    background-color: #009087;
+    width: 40%;
+    padding: 20px;
+    border-right: 3px solid #8f8e8e;
+}
+
+.live-preview {
+    width: 60%;
+    padding: 20px;
+}
+
+.job-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.job-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.job-list .selected {
+    background-color: rgb(250, 243, 231);
+    border-radius: 10px;
+    width: auto;
+    margin: 1px;
+    padding: 2px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+.button2 {
+    display: inline-block;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+}
+
+.button2:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.button2:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.button2:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #009087;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.button2:hover {
+    color: #ffffff;
+    border: 1px solid black;
+}
+
+.button2:hover:before {
+    top: -35%;
+    background-color: #009087;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button2:hover:after {
+    top: -45%;
+    background-color: #009087;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.Btn {
+    width: 110px;
+    height: 35px;
+    color: #090909;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.342);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .5s;
+}
+
+.text {
+    color: #090909;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+    z-index: 2;
+}
+
+.svgIcon {
+    z-index: 2;
+}
+
+.svgIcon path {
+    fill: #009087;
+}
+
+.Btn:hover {
+    color: #29a199;
+}
+
+.effect {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #009087;
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 0;
+    transition-duration: .5s;
+}
+
+.Btn:hover .effect {
+    transform: scale(15);
+    transform-origin: center;
+    opacity: 1;
+    transition-duration: .5s;
+}
+
+.Btn:hover {
+    box-shadow: 0px 0px 5px #009087,
+        0px 0px 10px #009087,
+        0px 0px 30px #009087;
+    transition-duration: .7s;
+}
+
+.Btn:hover .text {
+    color: #ffffff;
+}
+
+.Btn:hover .svgIcon path {
+    fill: #03665f;
+}
+
+.bin-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(255, 95, 95);
+    cursor: pointer;
+    border: 2px solid rgb(255, 201, 201);
+    transition-duration: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.bin-bottom {
+    width: 15px;
+    z-index: 2;
+}
+
+.bin-top {
+    width: 17px;
+    transform-origin: right;
+    transition-duration: 0.3s;
+    z-index: 2;
+}
+
+.bin-button:hover .bin-top {
+    transform: rotate(45deg);
+}
+
+.bin-button:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+.bin-button:active {
+    transform: scale(0.9);
+}
+
+.garbage {
+    position: absolute;
+    width: 14px;
+    height: auto;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.bin-button:hover .garbage {
+    animation: throw 0.4s linear;
+}
+
+@keyframes throw {
+    from {
+        transform: translate(-400%, -700%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+}
