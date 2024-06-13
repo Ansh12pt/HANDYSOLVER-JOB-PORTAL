@@ -10,14 +10,14 @@ const JobForm = ({ jobDetails, onFormChange }) => {
     return (
         <form>
             <label>
-                <input
+                <input className='title'
                     type="checkbox"
                     name="titleCheckbox"
                     checked={jobDetails.titleCheckbox || false}
                     onChange={handleChange}
                 />
                 Job Post Title
-                <input
+                <input className='title'
                     type="text"
                     name="title"
                     value={jobDetails.title || ''}
@@ -25,7 +25,7 @@ const JobForm = ({ jobDetails, onFormChange }) => {
                 />
             </label>
             <label>
-                <input
+                <input className='title'
                     type="checkbox"
                     name="introCheckbox"
                     checked={jobDetails.introCheckbox || false}
@@ -39,7 +39,7 @@ const JobForm = ({ jobDetails, onFormChange }) => {
                 />
             </label>
             <label>
-                <input
+                <input className='title'
                     type="checkbox"
                     name="rolesCheckbox"
                     checked={jobDetails.rolesCheckbox || false}
@@ -53,21 +53,21 @@ const JobForm = ({ jobDetails, onFormChange }) => {
                 />
             </label>
             <label>
-                <input
+                <input className='title'
                     type="checkbox"
                     name="experienceCheckbox"
                     checked={jobDetails.experienceCheckbox || false}
                     onChange={handleChange}
                 />
                 Experience Range
-                <input
+                <input className='title'
                     type="number"
                     name="minExperience"
                     value={jobDetails.minExperience || ''}
                     onChange={handleChange}
                     placeholder="Min"
                 />
-                <input
+                <input className='title'
                     type="number"
                     name="maxExperience"
                     value={jobDetails.maxExperience || ''}
@@ -76,7 +76,7 @@ const JobForm = ({ jobDetails, onFormChange }) => {
                 />
             </label>
             <label>
-                <input
+                <input className='title'
                     type="checkbox"
                     name="qualificationCheckbox"
                     checked={jobDetails.qualificationCheckbox || false}
@@ -90,21 +90,21 @@ const JobForm = ({ jobDetails, onFormChange }) => {
                 />
             </label>
             <label>
-                <input
+                <input className='title'
                     type="checkbox"
                     name="salaryCheckbox"
                     checked={jobDetails.salaryCheckbox || false}
                     onChange={handleChange}
                 />
                 Salary Range
-                <input
+                <input className='title'
                     type="number"
                     name="minSalary"
                     value={jobDetails.minSalary || ''}
                     onChange={handleChange}
                     placeholder="Min"
                 />
-                <input
+                <input className='title'
                     type="number"
                     name="maxSalary"
                     value={jobDetails.maxSalary || ''}
@@ -113,7 +113,7 @@ const JobForm = ({ jobDetails, onFormChange }) => {
                 />
             </label>
             <label>
-                <input
+                <input className='title'
                     type="checkbox"
                     name="conclusionCheckbox"
                     checked={jobDetails.conclusionCheckbox || false}
@@ -127,14 +127,14 @@ const JobForm = ({ jobDetails, onFormChange }) => {
                 />
             </label>
             <label>
-                <input
+                <input className='title'
                     type="checkbox"
                     name="companyCheckbox"
                     checked={jobDetails.companyCheckbox || false}
                     onChange={handleChange}
                 />
                 Company
-                <input
+                <input className='title'
                     type="text"
                     name="company"
                     value={jobDetails.company || ''}
@@ -142,14 +142,14 @@ const JobForm = ({ jobDetails, onFormChange }) => {
                 />
             </label>
             <label>
-                <input
+                <input className='title'
                     type="checkbox"
                     name="locationCheckbox"
                     checked={jobDetails.locationCheckbox || false}
                     onChange={handleChange}
                 />
                 Job Location
-                <input
+                <input className='title'
                     type="text"
                     name="location"
                     value={jobDetails.location || ''}
@@ -157,14 +157,14 @@ const JobForm = ({ jobDetails, onFormChange }) => {
                 />
             </label>
             <label>
-                <input
+                <input className='title'
                     type="checkbox"
                     name="jobTypeCheckbox"
                     checked={jobDetails.jobTypeCheckbox || false}
                     onChange={handleChange}
                 />
                 Job Type
-                <select
+                <select className='title'
                     name="jobType"
                     value={jobDetails.jobType || ''}
                     onChange={handleChange}
@@ -176,14 +176,14 @@ const JobForm = ({ jobDetails, onFormChange }) => {
                 </select>
             </label>
             <label>
-                <input
+                <input className='title'
                     type="checkbox"
                     name="labelsCheckbox"
                     checked={jobDetails.labelsCheckbox || false}
                     onChange={handleChange}
                 />
                 Labels
-                <select
+                <select className='title'
                     name="jobLabels"
                     value={jobDetails.jobLabels || []}
                     onChange={handleChange}

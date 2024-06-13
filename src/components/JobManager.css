@@ -41,6 +41,13 @@
     padding: 2px;
 }
 
+input {
+    background-color: #ffffff;
+    color: black;
+    border-radius: 8px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 
 form {
     display: flex;
