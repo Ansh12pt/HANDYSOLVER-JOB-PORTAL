@@ -32,7 +32,7 @@ const JobForm = ({ jobDetails, onFormChange }) => {
                     onChange={handleChange}
                 />
                 Introduction
-                <textarea
+                <textarea className='title'
                     name="introduction"
                     value={jobDetails.introduction || ''}
                     onChange={handleChange}
@@ -46,7 +46,7 @@ const JobForm = ({ jobDetails, onFormChange }) => {
                     onChange={handleChange}
                 />
                 Roles and Responsibilities
-                <textarea
+                <textarea className='title'
                     name="rolesResponsibilities"
                     value={jobDetails.rolesResponsibilities || ''}
                     onChange={handleChange}
@@ -83,7 +83,7 @@ const JobForm = ({ jobDetails, onFormChange }) => {
                     onChange={handleChange}
                 />
                 Qualification
-                <textarea
+                <textarea className='title'
                     name="qualification"
                     value={jobDetails.qualification || ''}
                     onChange={handleChange}
@@ -120,7 +120,7 @@ const JobForm = ({ jobDetails, onFormChange }) => {
                     onChange={handleChange}
                 />
                 Concluding Statement
-                <textarea
+                <textarea className='title'
                     name="conclusion"
                     value={jobDetails.conclusion || ''}
                     onChange={handleChange}
