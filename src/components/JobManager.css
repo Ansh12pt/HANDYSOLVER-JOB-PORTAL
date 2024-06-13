@@ -55,6 +55,10 @@ input {
     font-weight: 500;
 }
 
+.live-preview {
+    color: black;
+}
+
 form {
     display: flex;
     flex-direction: column;
