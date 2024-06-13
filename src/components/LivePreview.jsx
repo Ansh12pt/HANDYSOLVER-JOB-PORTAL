@@ -7,7 +7,7 @@ const LivePreview = ({ jobDetails }) => {
 
     return (
         <div className="live-preview">
-            <h2>Live Preview</h2>
+            <h2 className="live-preview">Live Preview</h2>
             <div id="live-preview-content">
                 {jobDetails.titleCheckbox && <h3>{jobDetails.title}</h3>}
                 {jobDetails.introCheckbox && <p>{jobDetails.introduction}</p>}

@@ -48,6 +48,12 @@ input {
     font-family: 'Times New Roman', Times, serif;
 }
 
+.title {
+    color: black;
+    background-color: #ffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
 
 form {
     display: flex;
